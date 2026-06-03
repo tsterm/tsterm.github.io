@@ -1,0 +1,731 @@
+/* Set the global variables for everything. Change these to use your own fonts and colours. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+
+  /* Set sans-serif & mono fonts */
+
+  --sans-font: 'Inter', sans-serif;
+  font-weight: 300;
+  /*--mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
+
+  /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
+  --base-fontsize: 1.15rem;
+
+  /* Major third scale progression - see https://type-scale.com/ */
+  --header-scale: 1.25;
+
+  /* Line height is set to the "Golden ratio" for optimal legibility */
+  --line-height: 1.618;
+
+  /* Default (light) theme */
+  --bg: #F5F5F5;
+  --accent-bg: #F5F5F5;
+  --text: #343131;
+  --text-light: #8E8E8E;
+  --border: #343131;
+  --accent: #BE7C4D;
+  --accent-light: #BE7C4D;
+  --code: #D81B60;
+  --preformatted: #444;
+  --marked: #FFDD33;
+  --disabled: #EFEFEF;
+}
+
+:root {
+  --size-1: calc(var(--base-fontsize) * var(--header-scale) * var(--header-scale) * var(--header-scale) * var(--header-scale));
+  --size-2: calc(var(--base-fontsize) * var(--header-scale) * var(--header-scale) * var(--header-scale));
+  --size-3: calc(var(--base-fontsize) * var(--header-scale) * var(--header-scale));
+  --size-4: calc(var(--base-fontsize) * var(--header-scale));
+  --size-5: var(--base-fontsize);
+  --size-6: calc(var(--base-fontsize) / var(--header-scale));
+}
+
+/* Dark theme */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #343131;
+    --accent-bg: #343131;
+    --text: #F5F5F5;
+    --text-light: #8E8E8E;
+    --border: #F5F5F5;
+    --accent: #BE7C4D;
+    --accent-light: #8E8E8E;
+    --code: #F06292;
+    --preformatted: #CCC;
+    --disabled: #111;
+  }
+
+  img, video {
+    opacity: 100%;
+  }
+} */
+
+html {
+  /* Set the font globally */
+  font-family: var(--sans-font);
+}
+
+/* Make the body a nice central block */
+body {
+  color: var(--text);
+  background: var(--bg);
+  font-size: var(--base-fontsize);
+  line-height: var(--line-height);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 2rem;
+  overflow-x: hidden;
+}
+
+.small-multiples {
+  margin-top: 30px;
+}
+.small-multiples-child {
+  position: relative;
+  float: left;
+  height: 16.5rem;    /* originally 210px */
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.small-multiples-child:before {
+  content: "";
+  background: var(--accent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25px;
+  width: 20%;
+}
+.small-multiples-title {
+  width: 12rem;     /* originally 180px */
+  margin-top: 1.1px;
+  font-weight: 500;
+  font-size: var(--size-5);
+}
+.small-multiples-chart {
+  position: absolute;
+  bottom: 25px;
+}
+.as-of-time {
+  clear: left;
+  padding-top: 20px;
+  font-size: var(--size-5);
+  font-weight: 300;
+}
+
+.landing-pane {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-gap {
+  gap: .618em;
+}
+
+.flex-row-gap {
+  row-gap: .382em;
+}
+
+.height-1 {
+  height: var(--size-1);
+}
+
+.height-4 {
+  height: var(--size-4);
+}
+
+.height-5 {
+  height: var(--size-5);
+}
+
+#display {
+  fill: #343131;
+}
+
+/* Make the header bg full width, but the content inline with body */
+header {
+  background: var(--accent-bg);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  padding: 2.5rem;
+  width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+}
+
+
+/* Remove margins for header text */
+header h1,
+header p {
+  margin: 0;
+}
+
+/* Fix line height when title wraps */
+h1, h2, h3 {
+  line-height: 1;
+}
+
+/* Format navigation */
+nav {
+  display: flex;
+  font-size: var(--size-5);
+  line-height: 2;
+  max-width: 75rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+flex-wrap: wrap;
+  }
+
+nav a {
+  margin: 0rem 0rem 0 0;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  color: var(--text) !important;
+  display: inline-block;
+  padding: .1rem 1rem;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav a:hover {
+  color: var(--accent) !important;
+  border-color: var(--accent);
+}
+
+nav a.current:hover {
+  text-decoration: none;
+}
+
+a.nav {
+  color:  var(--text);
+}
+
+
+
+footer {
+ display: block;
+  font-size: var(--size-5);
+  line-height: 1.2;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: var(--text);
+  color: var(--bg);
+  padding: 2.5rem;
+  width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 5rem;
+  background-image: linear-gradient(90deg, rgba(245,245,245,.15) 2%, transparent 0),linear-gradient(rgba(245,245,245,.15) 2%, transparent 0);
+  background-size: 50px 50px;
+}
+
+/* Format headers */
+h1 {
+  font-size: var(--size-1);
+  margin-top: calc(var(--line-height) * 1.2rem); font-weight: 500; letter-spacing: -0.05em
+
+}
+
+h2 {
+  font-size: var(--size-2);
+  margin-top: calc(var(--line-height) * 1.2rem); font-weight: 500; letter-spacing: -0.05em
+
+}
+
+h3 {
+  font-size: var(--size-3);
+  margin-top: calc(var(--line-height) * 1.2rem); font-weight: 500; letter-spacing: -0.05em
+}
+
+h4 {
+  font-size: var(--size-4);
+  margin-top: calc(var(--line-height) * 1.2rem); font-weight: 500; letter-spacing: -0.05em
+}
+
+h5 {
+  font-size: var(--size-5);
+  margin-top: calc(var(--line-height) * 1.2rem); font-weight: 500; letter-spacing: -0.05em
+}
+
+h6 {
+  font-size: var(--size-6);
+  margin-top: calc(var(--line-height) * 1.2rem); letter-spacing: -0.05em
+}
+
+/* Format links & buttons */
+a {
+
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-light);
+
+}
+
+a button,
+button,
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border: 1px solid var(--accent);
+  border-radius: 24px;
+  color: var(--accent) !important;
+  background: none;
+  font-size: 1rem;
+  padding: .7rem 1.2rem;
+  margin: .75rem 0;
+  transition: .4s;
+
+}
+button {
+  margin-right: .5rem;
+}
+
+button.td-name{
+margin-left: 0.5rem;
+padding: 0.5rem 1.2rem;
+text-decoration:none;
+
+  }
+
+a button[disabled],
+button[disabled],
+[role="button"][aria-disabled="true"],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][disabled],
+select[disabled] {
+  cursor: default;
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
+  background-color: var(--disabled);
+  border-radius: 12px;
+}
+
+input[type="range"] {
+  padding: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Set the cursor to '?' while hovering over an abbreviation */
+abbr {
+  cursor: help;
+}
+
+button:focus,
+button:enabled:hover,
+[role="button"]:focus,
+[role="button"]:not([aria-disabled="true"]):hover,
+input [type="text"]:focus {
+ color: var(--border) !important;
+  border-color: var(--border);
+}
+input[type="submit"]:focus {
+  border-color: var(--accent);
+}
+
+input[type="submit"]:enabled:hover,
+input[type="reset"]:focus,
+input[type="reset"]:enabled:hover,
+input[type="button"]:focus,
+input[type="button"]:enabled:hover,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:enabled:hover,
+input[type="radio"]:focus,
+input[type="radio"]:enabled:hover{
+  opacity: .8;
+  cursor: pointer;
+}
+
+/* Format the expanding box */
+details {
+  background: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: .6rem 1rem;
+}
+
+details[open] {
+  padding: .6rem 1rem .75rem 1rem;
+}
+
+details[open] summary {
+  margin-bottom: .5rem;
+  padding: 0;
+}
+
+details[open]>*:last-child {
+  margin-bottom: 0;
+}
+
+/* Format tables */
+/* Format tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+td,
+th {
+  border: 1px solid var(--border);
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  padding: .5em;
+  font-weight: 500;
+
+}
+
+th {
+  background: var(--accent-bg);
+  font-weight: 700;
+  background-color: var(--text);
+  color: var(--bg);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+
+}
+
+tr:nth-child(even) {
+  /* Set every other cell slightly darker. Improves readability. */
+  background: var(--accent-bg);
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: .5rem;
+
+}
+/* Lists */
+ol,
+ul {
+  padding-left: 3rem;
+}
+
+/* Format forms */
+textarea,
+select,
+input {
+  font-size: inherit;
+  font-family: inherit;
+  margin-bottom: .5rem;
+  color: var(--text);
+  background: var(--bg);
+
+ border-top: none;
+ border-left: none;
+ border-right: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: calc(100% - 5.5rem);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+
+
+}
+
+textarea {
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* Add arrow to  */
+select {
+  background-image:
+    linear-gradient(45deg, transparent 49%, var(--text) 51%),
+    linear-gradient(135deg, var(--text) 51%, transparent 49%);
+  background-position:
+    calc(100% - 20px),
+    calc(100% - 15px);
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+ /* border-top: 1px solid var(--border);*/
+ border-top: none;
+ border-left: none;
+ border-right: none;
+}
+
+input[id='datalist'] {
+border: 1px solid var(--border);
+border-radius: 24px;
+padding-left: 1em;
+width: auto;
+max-width: 12em;
+background-color: none;
+}
+input[id='datalist']:hover {
+  border-color: var(--accent);
+
+}
+select[multiple] {
+  background-image: none !important;
+  border: solid 1px var(--accent);
+}
+
+/* checkbox and radio button style */
+input[type="checkbox"], input[type="radio"]{
+  vertical-align: -webkit-baseline-middle;
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-top: -0.3rem;
+  padding: 0.5rem;
+}
+input[type="radio"]{
+  border-radius: 100%;
+  border: 1px solid var(--border);
+  margin-top: .5rem;
+  padding-top: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-top: -0.26rem;
+
+
+
+
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background: var(--accent);
+}
+
+input[type="checkbox"]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: ' ';
+  width: 0.1em;
+  height: 0.23em;
+  border-radius: 0;
+  position: absolute;
+  top: 0.03em;
+  right: 0.11em;
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-right: solid var(--bg) 0.08em;
+  border-bottom: solid var(--bg) 0.08em;
+  transform: rotate(45deg);
+}
+input[type="radio"]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: ' ';
+  width: .4em;
+  height: .4em;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.40em;
+  background: var(--bg);
+  left: 0.40em;
+}
+
+/* Datalist format options */
+datalist {
+  position: absolute;
+  max-height: 20em;
+  border: 1px solid var(--border);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}
+
+datalist option {
+  padding: 0.3em 1em;
+  background-color: var(--bg);
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background-color: none;
+}
+
+/* option active styles */
+datalist option:hover, datalist option:focus {
+  border-color: var(--accent);
+  background-color: none;
+  outline: 1px solid var(--solid);
+}
+
+/* Make the textarea wider than other inputs */
+textarea {
+  width: 80%
+}
+
+/* Makes input fields wider on smaller screens */
+@media only screen and (max-width: 500px) {
+  textarea,
+  select,
+  input {
+    width: 100%;
+
+  }
+}
+
+/* Ensures the checkbox and radio inputs do not have a set width like other input fields */
+input[type="checkbox"], input[type="radio"]{
+  width: auto;
+}
+
+/* do not show border around file selector button */
+input[type="file"] {
+  border: 0;
+}
+
+/* Without this any HTML using <fieldset> shows ugly borders and has additional padding/margin. (Issue #3) */
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Misc body elements */
+
+hr {
+  color: var(--border);
+  border-top: 1px;
+  margin: 1rem auto;
+}
+
+mark {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: var(--marked);
+}
+
+main img, main video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  margin: 2rem 0 2rem 2rem;
+  padding: .4rem .8rem;
+  opacity: .8;
+
+
+}
+
+cite {
+  color: var(--text-light);
+  font-style: normal;
+}
+
+/* Use mono font for code like elements */
+code,
+pre,
+pre span,
+kbd,
+samp {
+  font-family: var(--mono-font);
+  color: var(--code);
+}
+
+kbd {
+  color: var(--preformatted);
+  border: 1px solid var(--preformatted);
+  border-bottom: 3px solid var(--preformatted);
+  border-radius: 5px;
+  padding: .1rem;
+}
+
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  overflow-x: auto;
+  color: var(--preformatted);
+  background: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+/* Fix embedded code within pre */
+pre code {
+  color: var(--preformatted);
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+/*width: 13.5%;
+height: 1.5%;
+fill: var(--text);
+background-color: none;
+padding: 0rem;
+*/
+}
+
+@media (prefers-color-scheme: dark) {
+svg {
+fill: var(--text);
+background-color: none;
+}
+svg .invert {
+fill: var(--bg);
+}
+}
+
+input::-webkit-calendar-picker-indicator {
+              opacity: 100;
+              padding-right: 1rem;
+              margin-bottom: 0.1rem;
+           }

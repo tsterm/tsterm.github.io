@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="causal time series analysis">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Time Series Terminal Whitepaper</title>
+<link rel="stylesheet" href="simple.css">
+<main>
+
+<h1>Time Series Terminal Whitepaper</h1>
+<p>Brief Solutions Ltd, May 2022</p>
+
+<h3 id="the-problem">The Problem</h3>
+<p><em>Is time series A predictive of time series B?</em></p>
+<p>i.e. given all information about A's value up to time <math><mi>t</mi></math>, is it predictive of the conditional distribution of B's value at a future time <math><mrow><mi>t</mi><mo>+</mo><mi>p</mi></mrow></math>, with <math><mi>p</mi></math> being the prediction horizon?</p>
+<p><em>Is this relationship causal?</em></p>
+<p><strong>i.e. the presence of A in the prediction model makes the prediction of the future of B better, its absence makes the prediction worse.</strong> Refer to <a href="#hannart2016">hannart2016</a> as well as <a href="https://en.wikipedia.org/wiki/Granger_causality">Granger Causality</a>. For a philosophical overview, refer to <a href="https://iep.utm.edu/causation/">Causation</a>.
+
+<h3 id="the-solution">The Solution</h3>
+<h4>Random experiments to identify the causal predictors</h4>
+<p>Given a set of time series data, <a href="/">tsterm.com</a> computes the predictive power of any series A for any series B, for a pre-determined prediction horizon, by conducting many random experiments to check the difference of prediction performance when A is present vs when A is absent.</p>
+
+<p>For an example of result, at the close of Thu 14 Dec 2023, the causal predictors for the S&amp;P 500 ETF SPY.US in 24 weeks would read like</p>
+<figure>
+<img src="whitepaper/cg.svg">
+</figure>
+
+<h4>Train a group of models</h4>
+<p id="aggregation">Once the causal predictors are selected, we train a group of models, each to predict a complete <a href="https://en.wikipedia.org/wiki/Conditional_probability_distribution">conditional distribution</a> of the target time series' value.</p>
+
+<p>For example, as of 2025-02-18 market close, below are two models' predicted outcomes for SPY.US in 24 weeks (2025-08-05), colored in green and yellow respectively. The average of the predicted outcomes (the <a href="https://en.wikipedia.org/wiki/Expected_value">"expectation"</a>) are in circled markers.</p>
+
+<figure>
+<img src="whitepaper/SPY.qtl.svg">
+</figure>
+
+<h4>How to use the results of all models?</h4>
+<p>We have to "aggregate" them: the predicted outcomes can be pooled together across the models. Alternatively, a model can vote "up" or "down" by comparing its own expectation with the last price. In case it has predicted an infinitely wide distribution, it would vote "undecided".</p>
+
+<p>On the above example, out of the two models, one would vote "up", one vote "down", or <math><mn>1</mn><mo>/</mo><mn>2</mn><mo>=</mo><mn>50%</mn></math> models vote "up", <math><mn>1</mn><mo>/</mo><mn>2</mn><mo>=</mo><mn>50%</mn></math> models vote "down". The net vote is that <math><mn>50</mn><mo>-</mo><mn>50</mn><mo>=</mo><mn>0%</mn></math> models vote neither "up" or "down".</p>
+
+<h3 id="goodness">Goodness of the Probabilistic Prediction</h3>
+<p>Whether from a particular model or pooled over all the models, we can test the goodness of the predicted distributions over time:</p>
+
+<p><em>Does the realised value follow well the predicted <a href="https://en.wikipedia.org/wiki/Conditional_probability_distribution">conditional distribution</a> generally?</em></p>
+
+<p>For a given time point, we denote by <strong id="realised_probability_level">realised probability level</strong> how much probability mass in the predicted <a href="https://en.wikipedia.org/wiki/Conditional_probability_distribution">conditional distribution</a> is below the realised value. It is always a value between 0 and 1. One may prove that if the prediction is well done, the <em>realised probability level</em> should be distributed <a href="https://en.wikipedia.org/wiki/Continuous_uniform_distribution">uniformly</a> between 0 and 1. It cannot hover around any particular smaller area between 0 and 1. It is therefore equivalent to testing the hypothesis:</p>
+
+<p><em>The <a href="#realised_probability_level">realised probability level</a> follows the <a href="https://en.wikipedia.org/wiki/Continuous_uniform_distribution">uniform distribution</a> between 0 and 1.</em></p>
+
+<p>For example, for prediction of S&amp;P 500 ETF SPY.US, 24-week ahead horizon, let us first look at two target dates Fri 2023-10-20 and Fri 2023-11-24.</p>
+<figure>
+<img src="whitepaper/SPY23hist.svg">
+</figure>
+
+<p>For Fri 2023-10-20, the prediction was made 24 weeks before on Fri 2023-05-05. 42% of the predicted values were below the realistion 421.19, the <a href="#realised_probability_level">realised probability level</a> was thus 42%, or 0.42.</p>
+<figure>
+<img src="whitepaper/SPY1020.svg">
+</figure>
+
+<p>For Fri 2023-11-24, the prediction was made 24 weeks before on Fri 2023-06-09. 56% of the predicted values were below the realisation 455.3, the <a href="#realised_probability_level">realised probability level</a> was thus 56%, or 0.56.</p>
+<figure>
+<img src="whitepaper/SPY1124.svg">
+</figure>
+
+<p>For each target date we obtain one realised probability level. On a sample of realised probability levels we will run a <a href="https://en.wikipedia.org/wiki/Kolmogorov-Smirnov_test">statistical test</a> of the hypothesis that this sample follow the uniform distribution between 0 and 1. For more detail refer to <a href="#diebold1998">diebold1998</a>.</p>
+
+<h3 id="backtest">Trading Backtest</h3>
+<p>On financial data, we can additionally perform a trading backtest to test the goodness. In one way, the signal is the net vote as described above.</p>
+
+<p>Take for example 1-month forecast horizon. The causal predictors are updated daily, new models get trained gradually, and model votes take place daily. Each signal concerns the future 1 month, so the next-day position would be the average of the signals that were output over the last one month.</p>
+
+<p>With 2-day ahead forecast horizon, under the ideal condition of <em>no</em> trading cost, the performances would be:</p>
+<p>For Invesco Nasdaq-100 ETF,</p>
+<figure>
+<img src="whitepaper/qqq.svg">
+</figure>
+<p>For SPDR S&P 500 ETF,</p>
+<figure>
+<img src="whitepaper/spy.svg">
+</figure>
+<p>For SPDR Dow Jones Industrial Average ETF,</p>
+<figure>
+<img src="whitepaper/dia.svg">
+</figure>
+<p>For interest rates, let's switch to a 1-week ahead forecast horizon:</p>
+<p>For US 5-Year Treasury Yield Rate,</p>
+<figure>
+<img src="whitepaper/dgs5-h1w.svg">
+</figure>
+<p>For US 10-Year Treasury Yield Rate,</p>
+<figure>
+<img src="whitepaper/dgs10-h1w.svg">
+</figure>
+
+<h3>References</h3>
+<p id="hannart2016">Hannart, A., J. Pearl, F. E. L. Otto, P. Naveau, and M. Ghil, Causal counterfactual theory for the attribution of weather and climate-related events, Bulletin of the American Meteorological Society, 97(1):99-110, 2016.</p>
+
+<p>Koenker, R. (2005). Quantile Regression (Econometric Society Monographs). Cambridge: Cambridge University Press. <a href="https://www.cambridge.org/core/books/quantile-regression/C18AE7BCF3EC43C16937390D44A328B1">doi:10.1017/CBO9780511754098</a></p>
+
+<p>Komunjer, Ivana, Quasi-maximum likelihood estimation for conditional quantiles, Journal of Econometrics, Volume 128, Issue 1, September 2005, Pages 137-164.</p>
+
+<p id="diebold1998">Diebold, F.X., Gunther, T. and Tay, A., Evaluating Density Forecasts, 1998.</p>
+
+</main>
+</html>
