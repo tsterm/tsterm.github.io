@@ -25,11 +25,17 @@
 <p>Time Series Terminal computes <a href="/static/whitepaper.html#the-problem">causal predictors</a> and verifiable probabilistic prediction for any given future time point.</p>
 
 
+<form action="/" method="get">
+  <input type="search" id="query" name="q" placeholder="Enter &quot;apple&quot; or &quot;AAPL&quot; to search" autofocus>
+  <button type="submit">Run</button>
+
+</form>
+
 <p class="flex-align-center flex-gap flex-row-gap">
- <a href="us_equity_indices.html">US three equity indices</a>
- <a href="gld.html">Gold</a>
- <a href="tlt.html">US 20+ Year Bonds ETF</a>
- <a href="nvda.html">Nvidia</a>
+ <a href="/?q=SPY.US&">S&P 500</a>
+ <a href="/?q=NVDA.US&">Nvidia</a>
+ <a href="/?q=QQQ.US%3BSPY.US%3BDIA.US&">US three equity indices</a>
+ <a href="/?q=TLT.US&">US 20+ Year Bonds ETF</a>
 </p>
 
 </div>
@@ -51,7 +57,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-13T09:29:40.641689</dc:date>
+    <dc:date>2026-06-22T16:39:58.206377</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -67,69 +73,67 @@
  <g id="figure_1">
   <g id="axes_1">
    <g id="line2d_1">
-    <path d="M 27.687273 87.604146 
-L 29.086646 89.262482 
-L 30.486019 91.229346 
-L 31.885392 93.594725 
-L 33.284765 101.127943 
-L 37.482884 97.348479 
-L 38.882257 97.914113 
-L 40.28163 93.440461 
-L 41.681003 103.00482 
-L 43.080376 107.787 
-L 47.278495 110.808 
-L 48.677868 98.942539 
-L 50.077241 97.20707 
-L 51.476614 95.098798 
-L 57.074107 94.777415 
-L 58.47348 94.18607 
-L 59.872853 89.069652 
-L 61.272226 86.717129 
-L 62.671599 80.649417 
-L 66.869718 79.775255 
-L 68.269091 70.519424 
-L 71.067837 68.154037 
-L 72.46721 63.873233 
-L 76.665329 63.384721 
-L 78.064702 66.187181 
-L 79.464075 62.819087 
-L 80.863448 66.495709 
-L 82.262821 55.401567 
-L 86.46094 44.680228 
-L 87.860313 49.102459 
-L 89.259687 54.141745 
-L 90.65906 66.585696 
-L 92.058433 68.025492 
-L 96.256552 67.986926 
-L 97.655925 70.532279 
-L 99.055298 55.967201 
-L 100.454671 51.249298 
-L 101.854044 46.492829 
-L 106.052163 41.042173 
-L 107.451536 39.31956 
-L 108.850909 32.827623 
-L 110.250282 20.088 
-L 111.649655 33.483244 
-L 115.847774 37.339841 
-L 117.247147 39.538101 
-L 118.64652 35.861479 
-L 121.445266 46.32571 
-L 127.042759 46.929909 
-L 128.442132 49.835205 
-L 129.841505 47.714085 
-L 131.240878 51.71209 
-L 135.438997 34.717354 
-L 136.83837 36.697065 
-L 138.237743 47.071319 
-L 139.637116 42.044883 
-L 141.036489 59.476696 
-L 145.234608 54.925921 
-L 146.633981 55.504406 
-L 148.033354 65.492996 
-L 149.432727 59.772376 
-" clip-path="url(#p492ca334a3)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 27.687273 93.440461 
+L 29.119572 103.00482 
+L 30.551872 107.787 
+L 34.84877 110.808 
+L 36.28107 98.942539 
+L 37.713369 97.20707 
+L 39.145668 95.098798 
+L 44.874866 94.777415 
+L 46.307166 94.18607 
+L 47.739465 89.069652 
+L 49.171765 86.717129 
+L 50.604064 80.649417 
+L 54.900963 79.775255 
+L 56.333262 70.519424 
+L 59.197861 68.154037 
+L 60.63016 63.873233 
+L 64.927059 63.384721 
+L 66.359358 66.187181 
+L 67.791658 62.819087 
+L 69.223957 66.495709 
+L 70.656257 55.401567 
+L 74.953155 44.680228 
+L 76.385455 49.102459 
+L 77.817754 54.141745 
+L 79.250053 66.585696 
+L 80.682353 68.025492 
+L 84.979251 67.986926 
+L 86.411551 70.532279 
+L 87.84385 55.967201 
+L 89.27615 51.249298 
+L 90.708449 46.492829 
+L 95.005348 41.042173 
+L 96.437647 39.31956 
+L 97.869947 32.827623 
+L 99.302246 20.088 
+L 100.734545 33.483244 
+L 105.031444 37.339841 
+L 106.463743 39.538101 
+L 107.896043 35.861479 
+L 110.760642 46.32571 
+L 116.48984 46.929909 
+L 117.922139 49.835205 
+L 119.354439 47.714085 
+L 120.786738 51.71209 
+L 125.083636 34.717354 
+L 126.515936 36.697065 
+L 127.948235 47.071319 
+L 129.380535 42.044883 
+L 130.812834 59.476696 
+L 135.109733 54.925921 
+L 136.542032 55.504406 
+L 137.974332 65.492996 
+L 139.406631 59.772376 
+L 140.83893 59.361006 
+L 145.135829 50.028043 
+L 146.568128 56.507124 
+L 148.000428 60.055193 
+L 149.432727 52.290579 
+" clip-path="url(#pcb48c033ea)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
     <defs>
-     <path id="mfd0d9edf8e" d="M 0 4.5 
+     <path id="mc43496ef1d" d="M 0 4.5 
 C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
 C 4.025852 2.338109 4.5 1.193414 4.5 0 
 C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
@@ -141,244 +145,71 @@ C -2.338109 4.025852 -1.193414 4.5 0 4.5
 z
 " style="stroke: #8e8e8e; stroke-width: 2"/>
     </defs>
-    <g clip-path="url(#p492ca334a3)">
-     <use data-time="2026-03-16" data-value="183.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="27.687273" y="87.604146" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-17" data-value="181.93" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="29.086646" y="89.262482" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-18" data-value="180.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="30.486019" y="91.229346" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-19" data-value="178.56" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="31.885392" y="93.594725" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-20" data-value="172.7" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="33.284765" y="101.127943" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-23" data-value="175.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="37.482884" y="97.348479" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-24" data-value="175.2" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="38.882257" y="97.914113" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-25" data-value="178.68" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="40.28163" y="93.440461" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-26" data-value="171.24" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="41.681003" y="103.00482" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-27" data-value="167.52" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="43.080376" y="107.787" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-30" data-value="165.17" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="47.278495" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-31" data-value="174.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="48.677868" y="98.942539" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-01" data-value="175.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="50.077241" y="97.20707" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-02" data-value="177.39" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="51.476614" y="95.098798" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-06" data-value="177.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="57.074107" y="94.777415" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-07" data-value="178.1" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="58.47348" y="94.18607" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-08" data-value="182.08" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="59.872853" y="89.069652" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-09" data-value="183.91" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="61.272226" y="86.717129" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-10" data-value="188.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="62.671599" y="80.649417" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-13" data-value="189.31" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="66.869718" y="79.775255" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-14" data-value="196.51" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="68.269091" y="70.519424" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-16" data-value="198.35" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="71.067837" y="68.154037" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-17" data-value="201.68" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="72.46721" y="63.873233" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-20" data-value="202.06" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="76.665329" y="63.384721" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-21" data-value="199.88" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="78.064702" y="66.187181" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-22" data-value="202.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="79.464075" y="62.819087" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-23" data-value="199.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="80.863448" y="66.495709" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-24" data-value="208.27" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="82.262821" y="55.401567" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-27" data-value="216.61" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="86.46094" y="44.680228" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-28" data-value="213.17" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="87.860313" y="49.102459" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-29" data-value="209.25" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="89.259687" y="54.141745" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-30" data-value="199.57" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="90.65906" y="66.585696" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-01" data-value="198.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="92.058433" y="68.025492" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-04" data-value="198.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="96.256552" y="67.986926" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-05" data-value="196.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="97.655925" y="70.532279" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-06" data-value="207.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="99.055298" y="55.967201" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-07" data-value="211.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="100.454671" y="51.249298" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-08" data-value="215.2" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="101.854044" y="46.492829" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-11" data-value="219.44" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="106.052163" y="41.042173" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-12" data-value="220.78" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="107.451536" y="39.31956" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-13" data-value="225.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="108.850909" y="32.827623" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-14" data-value="235.74" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="110.250282" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-15" data-value="225.32" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="111.649655" y="33.483244" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-18" data-value="222.32" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="115.847774" y="37.339841" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-19" data-value="220.61" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="117.247147" y="39.538101" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-20" data-value="223.47" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="118.64652" y="35.861479" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-22" data-value="215.33" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="121.445266" y="46.32571" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-26" data-value="214.86" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="127.042759" y="46.929909" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-27" data-value="212.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="128.442132" y="49.835205" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-28" data-value="214.25" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="129.841505" y="47.714085" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-29" data-value="211.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="131.240878" y="51.71209" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-01" data-value="224.36" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="135.438997" y="34.717354" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-02" data-value="222.82" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="136.83837" y="36.697065" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-03" data-value="214.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="138.237743" y="47.071319" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-04" data-value="218.66" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="139.637116" y="42.044883" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-05" data-value="205.1" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="141.036489" y="59.476696" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-08" data-value="208.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="145.234608" y="54.925921" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-09" data-value="208.19" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="146.633981" y="55.504406" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-10" data-value="200.42" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="148.033354" y="65.492996" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-11" data-value="204.87" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mfd0d9edf8e" x="149.432727" y="59.772376" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+    <g clip-path="url(#pcb48c033ea)">
+     <use data-time="2026-03-25" data-value="178.68" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="27.687273" y="93.440461" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-26" data-value="171.24" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="29.119572" y="103.00482" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-27" data-value="167.52" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="30.551872" y="107.787" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-30" data-value="165.17" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="34.84877" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-31" data-value="174.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="36.28107" y="98.942539" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-01" data-value="175.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="37.713369" y="97.20707" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-02" data-value="177.39" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="39.145668" y="95.098798" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-06" data-value="177.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="44.874866" y="94.777415" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-07" data-value="178.1" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="46.307166" y="94.18607" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-08" data-value="182.08" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="47.739465" y="89.069652" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-09" data-value="183.91" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="49.171765" y="86.717129" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-10" data-value="188.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="50.604064" y="80.649417" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-13" data-value="189.31" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="54.900963" y="79.775255" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-14" data-value="196.51" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="56.333262" y="70.519424" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-16" data-value="198.35" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="59.197861" y="68.154037" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-17" data-value="201.68" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="60.63016" y="63.873233" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-20" data-value="202.06" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="64.927059" y="63.384721" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-21" data-value="199.88" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="66.359358" y="66.187181" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-22" data-value="202.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="67.791658" y="62.819087" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-23" data-value="199.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="69.223957" y="66.495709" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-24" data-value="208.27" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="70.656257" y="55.401567" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-27" data-value="216.61" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="74.953155" y="44.680228" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-28" data-value="213.17" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="76.385455" y="49.102459" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-29" data-value="209.25" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="77.817754" y="54.141745" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-30" data-value="199.57" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="79.250053" y="66.585696" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-01" data-value="198.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="80.682353" y="68.025492" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-04" data-value="198.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="84.979251" y="67.986926" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-05" data-value="196.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="86.411551" y="70.532279" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-06" data-value="207.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="87.84385" y="55.967201" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-07" data-value="211.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="89.27615" y="51.249298" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-08" data-value="215.2" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="90.708449" y="46.492829" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-11" data-value="219.44" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="95.005348" y="41.042173" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-12" data-value="220.78" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="96.437647" y="39.31956" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-13" data-value="225.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="97.869947" y="32.827623" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-14" data-value="235.74" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="99.302246" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-15" data-value="225.32" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="100.734545" y="33.483244" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-18" data-value="222.32" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="105.031444" y="37.339841" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-19" data-value="220.61" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="106.463743" y="39.538101" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-20" data-value="223.47" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="107.896043" y="35.861479" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-22" data-value="215.33" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="110.760642" y="46.32571" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-26" data-value="214.86" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="116.48984" y="46.929909" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-27" data-value="212.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="117.922139" y="49.835205" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-28" data-value="214.25" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="119.354439" y="47.714085" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-29" data-value="211.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="120.786738" y="51.71209" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-01" data-value="224.36" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="125.083636" y="34.717354" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-02" data-value="222.82" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="126.515936" y="36.697065" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-03" data-value="214.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="127.948235" y="47.071319" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-04" data-value="218.66" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="129.380535" y="42.044883" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-05" data-value="205.1" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="130.812834" y="59.476696" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-08" data-value="208.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="135.109733" y="54.925921" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-09" data-value="208.19" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="136.542032" y="55.504406" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-10" data-value="200.42" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="137.974332" y="65.492996" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-11" data-value="204.87" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="139.406631" y="59.772376" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-12" data-value="205.19" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="140.83893" y="59.361006" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-15" data-value="212.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="145.135829" y="50.028043" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-16" data-value="207.41" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="146.568128" y="56.507124" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-17" data-value="204.65" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="148.000428" y="60.055193" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-18" data-value="210.69" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mc43496ef1d" x="149.432727" y="52.290579" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p492ca334a3">
-   <rect x="21.6" y="15.552" width="133.92" height="99.792"/>
-  </clipPath>
- </defs>
-<text id="display" visibility="hidden" x="0" y="1em"></text></svg>
-
-    </div>
-    
-    <div class="small-multiples-child">
-      <p class="small-multiples-title">Microchip Technology Incorporated Common Stock</p>
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172.8 129.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-13T09:29:40.647920</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="line2d_1">
-    <path d="M 27.687273 102.828196 
-L 29.086646 101.219535 
-L 30.486019 100.965536 
-L 31.885392 103.971192 
-L 33.284765 104.648523 
-L 37.482884 101.7487 
-L 38.882257 99.01821 
-L 40.28163 100.01304 
-L 41.681003 102.045032 
-L 43.080376 106.701682 
-L 47.278495 110.808 
-L 48.677868 101.177202 
-L 50.077241 99.547375 
-L 51.476614 99.08171 
-L 57.074107 95.652722 
-L 58.47348 95.038891 
-L 59.872853 88.22325 
-L 61.272226 87.186087 
-L 62.671599 86.466423 
-L 66.869718 82.254272 
-L 68.269091 80.243446 
-L 71.067837 75.226958 
-L 72.46721 71.226474 
-L 76.665329 67.776325 
-L 78.064702 66.633329 
-L 79.464075 63.352508 
-L 80.863448 46.080571 
-L 82.262821 48.620562 
-L 86.46094 54.123883 
-L 87.860313 59.584855 
-L 89.259687 47.075401 
-L 90.65906 41.275755 
-L 92.058433 39.07443 
-L 96.256552 36.216941 
-L 97.655925 29.485965 
-L 99.055298 20.088 
-L 100.454671 22.924323 
-L 101.854044 28.194804 
-L 106.052163 28.321803 
-L 107.451536 31.136959 
-L 108.850909 33.232452 
-L 110.250282 32.533954 
-L 111.649655 39.286096 
-L 115.847774 41.593254 
-L 117.247147 43.60408 
-L 118.64652 38.926264 
-L 121.445266 40.175093 
-L 127.042759 30.396122 
-L 128.442132 32.936123 
-L 129.841505 34.650611 
-L 131.240878 37.592766 
-L 135.438997 44.217918 
-L 136.83837 32.703289 
-L 138.237743 33.571111 
-L 139.637116 34.100275 
-L 141.036489 50.948894 
-L 145.234608 44.535404 
-L 146.633981 44.323742 
-L 148.033354 51.859042 
-L 149.432727 41.212256 
-" clip-path="url(#p5402a93c4f)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
-    <defs>
-     <path id="m98b58ba614" d="M 0 4.5 
-C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
-C 4.025852 2.338109 4.5 1.193414 4.5 0 
-C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
-C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
-C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
-C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
-C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
-C -2.338109 4.025852 -1.193414 4.5 0 4.5 
-z
-" style="stroke: #8e8e8e; stroke-width: 2"/>
-    </defs>
-    <g clip-path="url(#p5402a93c4f)">
-     <use data-time="2026-03-16" data-value="63.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="27.687273" y="102.828196" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-17" data-value="64.59" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="29.086646" y="101.219535" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-18" data-value="64.71" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="30.486019" y="100.965536" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-19" data-value="63.29" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="31.885392" y="103.971192" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-20" data-value="62.97" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="33.284765" y="104.648523" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-23" data-value="64.34" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="37.482884" y="101.7487" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-24" data-value="65.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="38.882257" y="99.01821" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-25" data-value="65.16" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="40.28163" y="100.01304" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-26" data-value="64.2" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="41.681003" y="102.045032" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-27" data-value="62.0" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="43.080376" y="106.701682" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-30" data-value="60.06" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="47.278495" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-31" data-value="64.61" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="48.677868" y="101.177202" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-01" data-value="65.38" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="50.077241" y="99.547375" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-02" data-value="65.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="51.476614" y="99.08171" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-06" data-value="67.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="57.074107" y="95.652722" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-07" data-value="67.51" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="58.47348" y="95.038891" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-08" data-value="70.73" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="59.872853" y="88.22325" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-09" data-value="71.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="61.272226" y="87.186087" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-10" data-value="71.56" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="62.671599" y="86.466423" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-13" data-value="73.55" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="66.869718" y="82.254272" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-14" data-value="74.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="68.269091" y="80.243446" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-16" data-value="76.87" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="71.067837" y="75.226958" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-17" data-value="78.76" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="72.46721" y="71.226474" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-20" data-value="80.39" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="76.665329" y="67.776325" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-21" data-value="80.93" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="78.064702" y="66.633329" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-22" data-value="82.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="79.464075" y="63.352508" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-23" data-value="90.64" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="80.863448" y="46.080571" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-24" data-value="89.44" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="82.262821" y="48.620562" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-27" data-value="86.84" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="86.46094" y="54.123883" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-28" data-value="84.26" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="87.860313" y="59.584855" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-29" data-value="90.17" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="89.259687" y="47.075401" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-30" data-value="92.91" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="90.65906" y="41.275755" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-01" data-value="93.95" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="92.058433" y="39.07443" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-04" data-value="95.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="96.256552" y="36.216941" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-05" data-value="98.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="97.655925" y="29.485965" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-06" data-value="102.92" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="99.055298" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-07" data-value="101.58" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="100.454671" y="22.924323" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-08" data-value="99.09" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="101.854044" y="28.194804" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-11" data-value="99.03" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="106.052163" y="28.321803" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-12" data-value="97.7" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="107.451536" y="31.136959" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-13" data-value="96.71" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="108.850909" y="33.232452" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-14" data-value="97.04" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="110.250282" y="32.533954" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-15" data-value="93.85" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="111.649655" y="39.286096" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-18" data-value="92.76" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="115.847774" y="41.593254" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-19" data-value="91.81" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="117.247147" y="43.60408" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-20" data-value="94.02" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="118.64652" y="38.926264" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-22" data-value="93.43" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="121.445266" y="40.175093" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-26" data-value="98.05" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="127.042759" y="30.396122" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-27" data-value="96.85" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="128.442132" y="32.936123" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-28" data-value="96.04" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="129.841505" y="34.650611" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-29" data-value="94.65" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="131.240878" y="37.592766" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-01" data-value="91.52" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="135.438997" y="44.217918" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-02" data-value="96.96" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="136.83837" y="32.703289" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-03" data-value="96.55" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="138.237743" y="33.571111" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-04" data-value="96.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="139.637116" y="34.100275" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-05" data-value="88.34" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="141.036489" y="50.948894" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-08" data-value="91.37" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="145.234608" y="44.535404" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-09" data-value="91.47" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="146.633981" y="44.323742" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-10" data-value="87.91" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="148.033354" y="51.859042" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-11" data-value="92.94" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m98b58ba614" x="149.432727" y="41.212256" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-    </g>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p5402a93c4f">
+  <clipPath id="pcb48c033ea">
    <rect x="21.6" y="15.552" width="133.92" height="99.792"/>
   </clipPath>
  </defs>
@@ -393,7 +224,7 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-13T09:29:40.653677</dc:date>
+    <dc:date>2026-06-22T16:39:58.213247</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -409,69 +240,67 @@ z
  <g id="figure_1">
   <g id="axes_1">
    <g id="line2d_1">
-    <path d="M 27.687273 106.660035 
-L 29.086646 101.040212 
-L 30.486019 104.51915 
-L 31.885392 104.786761 
-L 33.284765 105.455788 
-L 37.482884 101.843044 
-L 38.882257 93.547115 
-L 40.28163 96.892248 
-L 41.681003 100.906407 
-L 43.080376 110.808 
-L 47.278495 110.406584 
-L 48.677868 95.286584 
-L 50.077241 85.384991 
-L 51.476614 82.708885 
-L 57.074107 76.152425 
-L 58.47348 72.673487 
-L 59.872853 50.461805 
-L 61.272226 37.48269 
-L 62.671599 46.447646 
-L 66.869718 35.074195 
-L 68.269091 40.694018 
-L 71.067837 48.856148 
-L 72.46721 29.454368 
-L 76.665329 28.517735 
-L 78.064702 30.658619 
-L 79.464075 33.869947 
-L 80.863448 33.468531 
-L 82.262821 47.518088 
-L 86.46094 42.299665 
-L 87.860313 39.088354 
-L 89.259687 39.623575 
-L 90.65906 33.067115 
-L 92.058433 37.884106 
-L 96.256552 52.067469 
-L 97.655925 47.250478 
-L 99.055298 39.757381 
-L 100.454671 51.130832 
-L 101.854044 48.187115 
-L 106.052163 62.102867 
-L 107.451536 62.236673 
-L 108.850909 85.518796 
-L 110.250282 76.420035 
-L 111.649655 80.434195 
-L 115.847774 76.018619 
-L 117.247147 78.025699 
-L 118.64652 61.969062 
-L 121.445266 57.553487 
-L 127.042759 52.335063 
-L 128.442132 59.426779 
-L 129.841505 62.638078 
-L 131.240878 57.285897 
-L 135.438997 74.680577 
-L 136.83837 60.631029 
-L 138.237743 80.166592 
-L 139.637116 49.123764 
-L 141.036489 46.046248 
-L 145.234608 50.595631 
-L 146.633981 41.630649 
-L 148.033354 31.060017 
-L 149.432727 20.088 
-" clip-path="url(#pe401b63079)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 27.687273 99.145602 
+L 29.119572 102.509755 
+L 30.551872 110.808 
+L 34.84877 110.471585 
+L 36.28107 97.799941 
+L 37.713369 89.501696 
+L 39.145668 87.258927 
+L 44.874866 81.764143 
+L 46.307166 78.848544 
+L 47.739465 60.233562 
+L 49.171765 49.356133 
+L 50.604064 56.869409 
+L 54.900963 47.337642 
+L 56.333262 52.047456 
+L 59.197861 58.887906 
+L 60.63016 42.627824 
+L 64.927059 41.842858 
+L 66.359358 43.637073 
+L 67.791658 46.328396 
+L 69.223957 45.99198 
+L 70.656257 57.766517 
+L 74.953155 53.393104 
+L 76.385455 50.701795 
+L 77.817754 51.150349 
+L 79.250053 45.655565 
+L 80.682353 49.692549 
+L 84.979251 61.579224 
+L 86.411551 57.54224 
+L 87.84385 51.262487 
+L 89.27615 60.794255 
+L 90.708449 58.327209 
+L 95.005348 69.989607 
+L 96.437647 70.101745 
+L 97.869947 89.613834 
+L 99.302246 81.98842 
+L 100.734545 85.352574 
+L 105.031444 81.652005 
+L 106.463743 83.334082 
+L 107.896043 69.877468 
+L 110.760642 66.1769 
+L 116.48984 61.803487 
+L 117.922139 67.746853 
+L 119.354439 70.438152 
+L 120.786738 65.95264 
+L 125.083636 80.530629 
+L 126.515936 68.756101 
+L 127.948235 85.128304 
+L 129.380535 59.112188 
+L 130.812834 56.533009 
+L 135.109733 60.345718 
+L 136.542032 52.83242 
+L 137.974332 43.973473 
+L 139.406631 34.778136 
+L 140.83893 20.088 
+L 145.135829 32.983921 
+L 146.568128 20.648692 
+L 148.000428 31.63826 
+L 149.432727 29.059075 
+" clip-path="url(#p3537cae841)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
     <defs>
-     <path id="md920654d78" d="M 0 4.5 
+     <path id="m869105c4a7" d="M 0 4.5 
 C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
 C 4.025852 2.338109 4.5 1.193414 4.5 0 
 C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
@@ -483,73 +312,246 @@ C -2.338109 4.025852 -1.193414 4.5 0 4.5
 z
 " style="stroke: #8e8e8e; stroke-width: 2"/>
     </defs>
-    <g clip-path="url(#pe401b63079)">
-     <use data-time="2026-03-16" data-value="51.16" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="27.687273" y="106.660035" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-17" data-value="51.58" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="29.086646" y="101.040212" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-18" data-value="51.32" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="30.486019" y="104.51915" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-19" data-value="51.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="31.885392" y="104.786761" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-20" data-value="51.25" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="33.284765" y="105.455788" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-23" data-value="51.52" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="37.482884" y="101.843044" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-24" data-value="52.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="38.882257" y="93.547115" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-25" data-value="51.89" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="40.28163" y="96.892248" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-26" data-value="51.59" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="41.681003" y="100.906407" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-27" data-value="50.85" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="43.080376" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-30" data-value="50.88" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="47.278495" y="110.406584" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-31" data-value="52.01" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="48.677868" y="95.286584" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-01" data-value="52.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="50.077241" y="85.384991" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-02" data-value="52.95" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="51.476614" y="82.708885" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-06" data-value="53.44" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="57.074107" y="76.152425" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-07" data-value="53.7" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="58.47348" y="72.673487" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-08" data-value="55.36" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="59.872853" y="50.461805" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-09" data-value="56.33" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="61.272226" y="37.48269" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-10" data-value="55.66" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="62.671599" y="46.447646" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-13" data-value="56.51" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="66.869718" y="35.074195" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-14" data-value="56.09" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="68.269091" y="40.694018" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-16" data-value="55.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="71.067837" y="48.856148" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-17" data-value="56.93" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="72.46721" y="29.454368" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-20" data-value="57.0" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="76.665329" y="28.517735" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-21" data-value="56.84" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="78.064702" y="30.658619" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-22" data-value="56.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="79.464075" y="33.869947" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-23" data-value="56.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="80.863448" y="33.468531" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-24" data-value="55.58" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="82.262821" y="47.518088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-27" data-value="55.97" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="86.46094" y="42.299665" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-28" data-value="56.21" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="87.860313" y="39.088354" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-29" data-value="56.17" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="89.259687" y="39.623575" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-30" data-value="56.66" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="90.65906" y="33.067115" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-01" data-value="56.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="92.058433" y="37.884106" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-04" data-value="55.24" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="96.256552" y="52.067469" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-05" data-value="55.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="97.655925" y="47.250478" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-06" data-value="56.16" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="99.055298" y="39.757381" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-07" data-value="55.31" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="100.454671" y="51.130832" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-08" data-value="55.53" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="101.854044" y="48.187115" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-11" data-value="54.49" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="106.052163" y="62.102867" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-12" data-value="54.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="107.451536" y="62.236673" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-13" data-value="52.74" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="108.850909" y="85.518796" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-14" data-value="53.42" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="110.250282" y="76.420035" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-15" data-value="53.12" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="111.649655" y="80.434195" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-18" data-value="53.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="115.847774" y="76.018619" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-19" data-value="53.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="117.247147" y="78.025699" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-20" data-value="54.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="118.64652" y="61.969062" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-22" data-value="54.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="121.445266" y="57.553487" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-26" data-value="55.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="127.042759" y="52.335063" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-27" data-value="54.69" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="128.442132" y="59.426779" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-28" data-value="54.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="129.841505" y="62.638078" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-29" data-value="54.85" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="131.240878" y="57.285897" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-01" data-value="53.55" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="135.438997" y="74.680577" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-02" data-value="54.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="136.83837" y="60.631029" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-03" data-value="53.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="138.237743" y="80.166592" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-04" data-value="55.46" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="139.637116" y="49.123764" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-05" data-value="55.69" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="141.036489" y="46.046248" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-08" data-value="55.35" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="145.234608" y="50.595631" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-09" data-value="56.02" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="146.633981" y="41.630649" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-10" data-value="56.81" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="148.033354" y="31.060017" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-11" data-value="57.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#md920654d78" x="149.432727" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+    <g clip-path="url(#p3537cae841)">
+     <use data-time="2026-03-25" data-value="51.89" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="27.687273" y="99.145602" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-26" data-value="51.59" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="29.119572" y="102.509755" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-27" data-value="50.85" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="30.551872" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-30" data-value="50.88" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="34.84877" y="110.471585" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-31" data-value="52.01" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="36.28107" y="97.799941" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-01" data-value="52.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="37.713369" y="89.501696" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-02" data-value="52.95" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="39.145668" y="87.258927" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-06" data-value="53.44" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="44.874866" y="81.764143" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-07" data-value="53.7" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="46.307166" y="78.848544" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-08" data-value="55.36" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="47.739465" y="60.233562" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-09" data-value="56.33" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="49.171765" y="49.356133" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-10" data-value="55.66" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="50.604064" y="56.869409" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-13" data-value="56.51" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="54.900963" y="47.337642" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-14" data-value="56.09" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="56.333262" y="52.047456" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-16" data-value="55.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="59.197861" y="58.887906" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-17" data-value="56.93" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="60.63016" y="42.627824" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-20" data-value="57.0" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="64.927059" y="41.842858" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-21" data-value="56.84" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="66.359358" y="43.637073" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-22" data-value="56.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="67.791658" y="46.328396" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-23" data-value="56.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="69.223957" y="45.99198" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-24" data-value="55.58" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="70.656257" y="57.766517" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-27" data-value="55.97" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="74.953155" y="53.393104" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-28" data-value="56.21" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="76.385455" y="50.701795" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-29" data-value="56.17" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="77.817754" y="51.150349" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-30" data-value="56.66" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="79.250053" y="45.655565" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-01" data-value="56.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="80.682353" y="49.692549" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-04" data-value="55.24" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="84.979251" y="61.579224" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-05" data-value="55.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="86.411551" y="57.54224" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-06" data-value="56.16" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="87.84385" y="51.262487" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-07" data-value="55.31" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="89.27615" y="60.794255" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-08" data-value="55.53" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="90.708449" y="58.327209" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-11" data-value="54.49" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="95.005348" y="69.989607" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-12" data-value="54.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="96.437647" y="70.101745" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-13" data-value="52.74" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="97.869947" y="89.613834" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-14" data-value="53.42" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="99.302246" y="81.98842" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-15" data-value="53.12" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="100.734545" y="85.352574" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-18" data-value="53.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="105.031444" y="81.652005" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-19" data-value="53.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="106.463743" y="83.334082" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-20" data-value="54.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="107.896043" y="69.877468" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-22" data-value="54.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="110.760642" y="66.1769" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-26" data-value="55.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="116.48984" y="61.803487" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-27" data-value="54.69" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="117.922139" y="67.746853" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-28" data-value="54.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="119.354439" y="70.438152" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-29" data-value="54.85" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="120.786738" y="65.95264" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-01" data-value="53.55" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="125.083636" y="80.530629" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-02" data-value="54.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="126.515936" y="68.756101" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-03" data-value="53.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="127.948235" y="85.128304" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-04" data-value="55.46" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="129.380535" y="59.112188" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-05" data-value="55.69" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="130.812834" y="56.533009" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-08" data-value="55.35" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="135.109733" y="60.345718" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-09" data-value="56.02" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="136.542032" y="52.83242" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-10" data-value="56.81" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="137.974332" y="43.973473" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-11" data-value="57.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="139.406631" y="34.778136" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-12" data-value="58.94" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="140.83893" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-15" data-value="57.79" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="145.135829" y="32.983921" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-16" data-value="58.89" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="146.568128" y="20.648692" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-17" data-value="57.91" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="148.000428" y="31.63826" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-18" data-value="58.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#m869105c4a7" x="149.432727" y="29.059075" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pe401b63079">
+  <clipPath id="p3537cae841">
+   <rect x="21.6" y="15.552" width="133.92" height="99.792"/>
+  </clipPath>
+ </defs>
+<text id="display" visibility="hidden" x="0" y="1em"></text></svg>
+
+    </div>
+    
+    <div class="small-multiples-child">
+      <p class="small-multiples-title">U.S. / New Zealand Foreign Exchange Rate NZDUSD</p>
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172.8 129.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-22T16:39:58.220167</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 27.687273 75.431146 
+L 29.086646 92.926554 
+L 30.486019 95.205485 
+L 34.684138 104.243403 
+L 36.083511 95.061668 
+L 37.482884 93.573527 
+L 38.882257 104.108197 
+L 40.28163 110.808 
+L 44.479749 105.071605 
+L 45.879122 101.828139 
+L 47.278495 69.739316 
+L 48.677868 59.148535 
+L 50.077241 64.625102 
+L 54.275361 56.671598 
+L 55.674734 45.991589 
+L 58.47348 50.24888 
+L 59.872853 50.543375 
+L 64.070972 49.270177 
+L 65.470345 54.501766 
+L 66.869718 45.263011 
+L 68.269091 60.004961 
+L 69.668464 52.478616 
+L 73.866583 44.125852 
+L 75.265956 51.648794 
+L 76.665329 68.164247 
+L 78.064702 44.825807 
+L 79.464075 46.775235 
+L 83.662194 54.524485 
+L 85.061567 50.507519 
+L 86.46094 29.255716 
+L 87.860313 33.316929 
+L 89.259687 27.045192 
+L 93.457806 27.285866 
+L 94.857179 30.14135 
+L 96.256552 35.803034 
+L 97.655925 42.588467 
+L 99.055298 65.807764 
+L 103.253417 54.295106 
+L 104.65279 66.682549 
+L 106.052163 54.939819 
+L 107.451536 53.796118 
+L 108.850909 61.204336 
+L 114.448401 66.040694 
+L 115.847774 46.58757 
+L 117.247147 32.652549 
+L 118.64652 20.088 
+L 122.844639 35.695944 
+L 124.244013 40.068833 
+L 125.643386 56.014057 
+L 127.042759 56.266763 
+L 128.442132 79.324662 
+L 132.640251 77.234365 
+L 134.039624 75.349721 
+L 135.438997 80.131875 
+L 136.83837 68.135468 
+L 138.237743 68.355019 
+L 142.435862 69.733996 
+L 143.835235 68.534031 
+L 145.234608 86.266108 
+L 146.633981 92.315443 
+L 148.033354 98.130623 
+L 149.432727 97.81708 
+" clip-path="url(#p4c03bbe215)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="me98ea86bc5" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #8e8e8e; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#p4c03bbe215)">
+     <use data-time="2026-03-25" data-value="0.5808" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="27.687273" y="75.431146" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-26" data-value="0.5753" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="29.086646" y="92.926554" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-27" data-value="0.5745" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="30.486019" y="95.205485" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-30" data-value="0.5716" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="34.684138" y="104.243403" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-31" data-value="0.5746" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="36.083511" y="95.061668" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-01" data-value="0.5751" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="37.482884" y="93.573527" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-02" data-value="0.5717" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="38.882257" y="104.108197" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-03" data-value="0.5696" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="40.28163" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-06" data-value="0.5714" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="44.479749" y="105.071605" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-07" data-value="0.5724" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="45.879122" y="101.828139" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-08" data-value="0.5827" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="47.278495" y="69.739316" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-09" data-value="0.586" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="48.677868" y="59.148535" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-10" data-value="0.5843" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="50.077241" y="64.625102" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-13" data-value="0.5868" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="54.275361" y="56.671598" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-14" data-value="0.5902" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="55.674734" y="45.991589" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-16" data-value="0.5889" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="58.47348" y="50.24888" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-17" data-value="0.5888" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="59.872853" y="50.543375" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-20" data-value="0.5892" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="64.070972" y="49.270177" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-21" data-value="0.5875" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="65.470345" y="54.501766" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-22" data-value="0.5905" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="66.869718" y="45.263011" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-23" data-value="0.5858" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="68.269091" y="60.004961" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-24" data-value="0.5882" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="69.668464" y="52.478616" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-27" data-value="0.5908" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="73.866583" y="44.125852" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-28" data-value="0.5884" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="75.265956" y="51.648794" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-29" data-value="0.5832" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="76.665329" y="68.164247" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-30" data-value="0.5906" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="78.064702" y="44.825807" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-01" data-value="0.59" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="79.464075" y="46.775235" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-04" data-value="0.5875" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="83.662194" y="54.524485" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-05" data-value="0.5888" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="85.061567" y="50.507519" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-06" data-value="0.5956" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="86.46094" y="29.255716" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-07" data-value="0.5943" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="87.860313" y="33.316929" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-08" data-value="0.5963" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="89.259687" y="27.045192" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-11" data-value="0.5962" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="93.457806" y="27.285866" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-12" data-value="0.5953" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="94.857179" y="30.14135" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-13" data-value="0.5935" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="96.256552" y="35.803034" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-14" data-value="0.5913" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="97.655925" y="42.588467" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-15" data-value="0.5839" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="99.055298" y="65.807764" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-18" data-value="0.5876" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="103.253417" y="54.295106" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-19" data-value="0.5836" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="104.65279" y="66.682549" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-20" data-value="0.5874" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="106.052163" y="54.939819" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-21" data-value="0.5877" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="107.451536" y="53.796118" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-22" data-value="0.5854" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="108.850909" y="61.204336" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-26" data-value="0.5838" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="114.448401" y="66.040694" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-27" data-value="0.59" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="115.847774" y="46.58757" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-28" data-value="0.5945" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="117.247147" y="32.652549" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-29" data-value="0.5985" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="118.64652" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-01" data-value="0.5935" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="122.844639" y="35.695944" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-02" data-value="0.5921" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="124.244013" y="40.068833" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-03" data-value="0.587" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="125.643386" y="56.014057" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-04" data-value="0.587" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="127.042759" y="56.266763" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-05" data-value="0.5796" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="128.442132" y="79.324662" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-08" data-value="0.5803" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="132.640251" y="77.234365" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-09" data-value="0.5809" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="134.039624" y="75.349721" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-10" data-value="0.5793" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="135.438997" y="80.131875" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-11" data-value="0.5832" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="136.83837" y="68.135468" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-12" data-value="0.5831" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="138.237743" y="68.355019" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-15" data-value="0.5827" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="142.435862" y="69.733996" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-16" data-value="0.583" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="143.835235" y="68.534031" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-17" data-value="0.5774" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="145.234608" y="86.266108" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-18" data-value="0.5755" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="146.633981" y="92.315443" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-19" data-value="0.5736" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="148.033354" y="98.130623" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-20" data-value="0.5737" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me98ea86bc5" x="149.432727" y="97.81708" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4c03bbe215">
    <rect x="21.6" y="15.552" width="133.92" height="99.792"/>
   </clipPath>
  </defs>
@@ -564,7 +566,7 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-06-13T09:29:40.660000</dc:date>
+    <dc:date>2026-06-22T16:39:58.226829</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -580,69 +582,67 @@ z
  <g id="figure_1">
   <g id="axes_1">
    <g id="line2d_1">
-    <path d="M 27.687273 70.376619 
-L 29.086646 68.371757 
-L 30.486019 85.747227 
-L 31.885392 98.110541 
-L 33.284765 110.808 
-L 37.482884 101.284906 
-L 38.882257 86.248442 
-L 40.28163 70.209547 
-L 41.681003 75.555845 
-L 43.080376 78.563138 
-L 47.278495 75.555845 
-L 48.677868 60.853525 
-L 50.077241 52.667006 
-L 51.476614 53.502365 
-L 57.074107 56.676729 
-L 58.47348 59.015735 
-L 59.872853 31.11474 
-L 61.272226 32.451315 
-L 62.671599 27.606232 
-L 66.869718 23.76358 
-L 68.269091 26.770873 
-L 71.067837 31.11474 
-L 72.46721 28.942789 
-L 76.665329 23.095293 
-L 78.064702 30.780597 
-L 79.464075 29.778166 
-L 80.863448 30.112309 
-L 82.262821 28.274519 
-L 86.46094 30.613545 
-L 87.860313 36.962254 
-L 89.259687 44.313414 
-L 90.65906 35.792751 
-L 92.058433 37.797613 
-L 96.256552 49.492641 
-L 97.655925 34.79032 
-L 99.055298 20.088 
-L 100.454671 36.962254 
-L 101.854044 33.78789 
-L 106.052163 22.594077 
-L 107.451536 24.598939 
-L 108.850909 25.935514 
-L 110.250282 32.451315 
-L 111.649655 55.340155 
-L 115.847774 56.676729 
-L 117.247147 76.391204 
-L 118.64652 65.03032 
-L 121.445266 55.507227 
-L 127.042759 43.812171 
-L 128.442132 40.637829 
-L 129.841505 37.630531 
-L 131.240878 41.139024 
-L 135.438997 44.981732 
-L 136.83837 34.957385 
-L 138.237743 33.119584 
-L 139.637116 33.286692 
-L 141.036489 49.826767 
-L 145.234608 61.020612 
-L 146.633981 47.487771 
-L 148.033354 67.035208 
-L 149.432727 39.969547 
-" clip-path="url(#p660cf8944e)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 27.687273 98.902488 
+L 29.119572 106.522016 
+L 30.551872 110.808 
+L 34.84877 106.522016 
+L 36.28107 85.568315 
+L 37.713369 73.900913 
+L 39.145668 75.091465 
+L 44.874866 79.615559 
+L 46.307166 82.949102 
+L 47.739465 43.184693 
+L 49.171765 45.089575 
+L 50.604064 38.184378 
+L 54.900963 32.707843 
+L 56.333262 36.993827 
+L 59.197861 43.184693 
+L 60.63016 40.089234 
+L 64.927059 31.755402 
+L 66.359358 42.708472 
+L 67.791658 41.279811 
+L 69.223957 41.756031 
+L 70.656257 39.136819 
+L 74.953155 42.470391 
+L 76.385455 51.518551 
+L 77.817754 61.995402 
+L 79.250053 49.85178 
+L 80.682353 52.709102 
+L 84.979251 69.376819 
+L 86.411551 48.423118 
+L 87.84385 27.469417 
+L 89.27615 51.518551 
+L 90.708449 46.994457 
+L 95.005348 31.041071 
+L 96.437647 33.898394 
+L 97.869947 35.803276 
+L 99.302246 45.089575 
+L 100.734545 77.710677 
+L 105.031444 79.615559 
+L 106.463743 107.712567 
+L 107.896043 91.521071 
+L 110.760642 77.948787 
+L 116.48984 61.281031 
+L 117.922139 56.756969 
+L 119.354439 52.470978 
+L 120.786738 57.471271 
+L 125.083636 62.947886 
+L 126.515936 48.661217 
+L 127.948235 46.04199 
+L 129.380535 46.280151 
+L 130.812834 69.853014 
+L 135.109733 85.806447 
+L 136.542032 66.519485 
+L 137.974332 94.37843 
+L 139.406631 55.804535 
+L 140.83893 32.945953 
+L 145.135829 25.326425 
+L 146.568128 20.088 
+L 148.000428 36.755717 
+L 149.432727 41.756031 
+" clip-path="url(#pfa0b57f172)" style="fill: none; stroke: #0095ce; stroke-width: 2; stroke-linecap: square"/>
     <defs>
-     <path id="me1c9acdf42" d="M 0 4.5 
+     <path id="mb665325455" d="M 0 4.5 
 C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
 C 4.025852 2.338109 4.5 1.193414 4.5 0 
 C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
@@ -654,73 +654,71 @@ C -2.338109 4.025852 -1.193414 4.5 0 4.5
 z
 " style="stroke: #8e8e8e; stroke-width: 2"/>
     </defs>
-    <g clip-path="url(#p660cf8944e)">
-     <use data-time="2026-03-16" data-value="49.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="27.687273" y="70.376619" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-17" data-value="49.52" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="29.086646" y="68.371757" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-18" data-value="48.48" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="30.486019" y="85.747227" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-19" data-value="47.74" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="31.885392" y="98.110541" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-20" data-value="46.98" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="33.284765" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-23" data-value="47.55" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="37.482884" y="101.284906" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-24" data-value="48.45" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="38.882257" y="86.248442" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-25" data-value="49.41" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="40.28163" y="70.209547" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-26" data-value="49.09" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="41.681003" y="75.555845" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-27" data-value="48.91" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="43.080376" y="78.563138" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-30" data-value="49.09" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="47.278495" y="75.555845" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-03-31" data-value="49.97" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="48.677868" y="60.853525" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-01" data-value="50.46" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="50.077241" y="52.667006" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-02" data-value="50.41" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="51.476614" y="53.502365" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-06" data-value="50.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="57.074107" y="56.676729" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-07" data-value="50.08" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="58.47348" y="59.015735" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-08" data-value="51.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="59.872853" y="31.11474" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-09" data-value="51.67" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="61.272226" y="32.451315" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-10" data-value="51.96" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="62.671599" y="27.606232" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-13" data-value="52.19" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="66.869718" y="23.76358" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-14" data-value="52.01" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="68.269091" y="26.770873" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-16" data-value="51.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="71.067837" y="31.11474" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-17" data-value="51.88" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="72.46721" y="28.942789" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-20" data-value="52.23" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="76.665329" y="23.095293" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-21" data-value="51.77" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="78.064702" y="30.780597" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-22" data-value="51.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="79.464075" y="29.778166" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-23" data-value="51.81" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="80.863448" y="30.112309" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-24" data-value="51.92" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="82.262821" y="28.274519" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-27" data-value="51.78" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="86.46094" y="30.613545" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-28" data-value="51.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="87.860313" y="36.962254" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-29" data-value="50.96" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="89.259687" y="44.313414" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-04-30" data-value="51.47" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="90.65906" y="35.792751" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-01" data-value="51.35" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="92.058433" y="37.797613" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-04" data-value="50.65" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="96.256552" y="49.492641" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-05" data-value="51.53" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="97.655925" y="34.79032" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-06" data-value="52.41" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="99.055298" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-07" data-value="51.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="100.454671" y="36.962254" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-08" data-value="51.59" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="101.854044" y="33.78789" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-11" data-value="52.26" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="106.052163" y="22.594077" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-12" data-value="52.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="107.451536" y="24.598939" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-13" data-value="52.06" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="108.850909" y="25.935514" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-14" data-value="51.67" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="110.250282" y="32.451315" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-15" data-value="50.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="111.649655" y="55.340155" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-18" data-value="50.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="115.847774" y="56.676729" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-19" data-value="49.04" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="117.247147" y="76.391204" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-20" data-value="49.72" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="118.64652" y="65.03032" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-22" data-value="50.29" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="121.445266" y="55.507227" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-26" data-value="50.99" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="127.042759" y="43.812171" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-27" data-value="51.18" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="128.442132" y="40.637829" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-28" data-value="51.36" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="129.841505" y="37.630531" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-05-29" data-value="51.15" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="131.240878" y="41.139024" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-01" data-value="50.92" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="135.438997" y="44.981732" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-02" data-value="51.52" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="136.83837" y="34.957385" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-03" data-value="51.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="138.237743" y="33.119584" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-04" data-value="51.62" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="139.637116" y="33.286692" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-05" data-value="50.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="141.036489" y="49.826767" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-08" data-value="49.96" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="145.234608" y="61.020612" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-09" data-value="50.77" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="146.633981" y="47.487771" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-10" data-value="49.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="148.033354" y="67.035208" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
-     <use data-time="2026-06-11" data-value="51.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#me1c9acdf42" x="149.432727" y="39.969547" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+    <g clip-path="url(#pfa0b57f172)">
+     <use data-time="2026-03-25" data-value="49.41" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="27.687273" y="98.902488" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-26" data-value="49.09" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="29.119572" y="106.522016" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-27" data-value="48.91" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="30.551872" y="110.808" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-30" data-value="49.09" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="34.84877" y="106.522016" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-03-31" data-value="49.97" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="36.28107" y="85.568315" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-01" data-value="50.46" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="37.713369" y="73.900913" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-02" data-value="50.41" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="39.145668" y="75.091465" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-06" data-value="50.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="44.874866" y="79.615559" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-07" data-value="50.08" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="46.307166" y="82.949102" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-08" data-value="51.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="47.739465" y="43.184693" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-09" data-value="51.67" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="49.171765" y="45.089575" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-10" data-value="51.96" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="50.604064" y="38.184378" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-13" data-value="52.19" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="54.900963" y="32.707843" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-14" data-value="52.01" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="56.333262" y="36.993827" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-16" data-value="51.75" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="59.197861" y="43.184693" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-17" data-value="51.88" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="60.63016" y="40.089234" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-20" data-value="52.23" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="64.927059" y="31.755402" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-21" data-value="51.77" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="66.359358" y="42.708472" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-22" data-value="51.83" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="67.791658" y="41.279811" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-23" data-value="51.81" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="69.223957" y="41.756031" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-24" data-value="51.92" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="70.656257" y="39.136819" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-27" data-value="51.78" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="74.953155" y="42.470391" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-28" data-value="51.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="76.385455" y="51.518551" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-29" data-value="50.96" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="77.817754" y="61.995402" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-04-30" data-value="51.47" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="79.250053" y="49.85178" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-01" data-value="51.35" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="80.682353" y="52.709102" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-04" data-value="50.65" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="84.979251" y="69.376819" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-05" data-value="51.53" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="86.411551" y="48.423118" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-06" data-value="52.41" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="87.84385" y="27.469417" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-07" data-value="51.4" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="89.27615" y="51.518551" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-08" data-value="51.59" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="90.708449" y="46.994457" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-11" data-value="52.26" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="95.005348" y="31.041071" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-12" data-value="52.14" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="96.437647" y="33.898394" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-13" data-value="52.06" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="97.869947" y="35.803276" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-14" data-value="51.67" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="99.302246" y="45.089575" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-15" data-value="50.3" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="100.734545" y="77.710677" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-18" data-value="50.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="105.031444" y="79.615559" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-19" data-value="49.04" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="106.463743" y="107.712567" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-20" data-value="49.72" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="107.896043" y="91.521071" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-22" data-value="50.29" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="110.760642" y="77.948787" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-26" data-value="50.99" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="116.48984" y="61.281031" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-27" data-value="51.18" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="117.922139" y="56.756969" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-28" data-value="51.36" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="119.354439" y="52.470978" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-05-29" data-value="51.15" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="120.786738" y="57.471271" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-01" data-value="50.92" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="125.083636" y="62.947886" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-02" data-value="51.52" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="126.515936" y="48.661217" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-03" data-value="51.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="127.948235" y="46.04199" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-04" data-value="51.62" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="129.380535" y="46.280151" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-05" data-value="50.63" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="130.812834" y="69.853014" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-08" data-value="49.96" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="135.109733" y="85.806447" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-09" data-value="50.77" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="136.542032" y="66.519485" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-10" data-value="49.6" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="137.974332" y="94.37843" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-11" data-value="51.22" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="139.406631" y="55.804535" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-12" data-value="52.18" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="140.83893" y="32.945953" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-15" data-value="52.5" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="145.135829" y="25.326425" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-16" data-value="52.72" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="146.568128" y="20.088" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-17" data-value="52.02" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="148.000428" y="36.755717" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
+     <use data-time="2026-06-18" data-value="51.81" visibility="hidden" onmouseover="showData(event)" onmouseout="hideData(event)" ontouchstart="showData(event)" ontouchend="hideData(event)" pointer-events="all" xlink:href="#mb665325455" x="149.432727" y="41.756031" style="fill: #0095ce; stroke: #8e8e8e; stroke-width: 2"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p660cf8944e">
+  <clipPath id="pfa0b57f172">
    <rect x="21.6" y="15.552" width="133.92" height="99.792"/>
   </clipPath>
  </defs>
@@ -730,7 +728,7 @@ z
     
   </div>
 
-  <p class="as-of-time">as of <time datetime="2026-06-11">Thu 2026-06-11 UTC</time></p>
+  <p class="as-of-time">as of <time datetime="2026-06-20">Sat 2026-06-20 UTC</time></p>
 <!-- </div> -->
 
 <h2>Newsletter</h2>
